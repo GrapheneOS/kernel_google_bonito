@@ -9,11 +9,11 @@ export KBUILD_BUILD_HOST=grapheneos
 
 PATH="$TOP/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9/bin:$PATH"
 PATH="$TOP/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9/bin:$PATH"
-PATH="$TOP/prebuilts/clang/host/linux-x86/clang-r346389b/bin:$PATH"
+PATH="$TOP/prebuilts/clang/host/linux-x86/clang-4393122/bin:$PATH"
 PATH="$TOP/prebuilts/misc/linux-x86/lz4:$PATH"
 PATH="$TOP/prebuilts/misc/linux-x86/dtc:$PATH"
 PATH="$TOP/prebuilts/misc/linux-x86/libufdt:$PATH"
-export LD_LIBRARY_PATH="$TOP/prebuilts/clang/host/linux-x86/clang-r346389b/lib64:$LD_LIBRARY_PATH"
+export LD_LIBRARY_PATH="$TOP/prebuilts/clang/host/linux-x86/clang-4393122/lib64:$LD_LIBRARY_PATH"
 
 make O=out ARCH=arm64 bonito_defconfig
 
